@@ -1,0 +1,27 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+dataDir: src/components/theme/Footer
+models:
+  social:
+    type: data
+    label: Social
+    file: social.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: number
+          name: id
+          label: Id
+          subtype: int
+        - type: string
+          name: name
+          label: Name
+        - type: string
+          name: link
+          label: Link
+        - type: image
+          name: icon
+          label: Icon
